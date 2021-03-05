@@ -9,7 +9,7 @@ h1 {
     cursor: pointer;
 }
 .header-row {
-    background-color: green;
+    background-color: #42b042c7;
     height: 100px;
 }
 .main-row {
@@ -19,7 +19,7 @@ h1 {
     padding-bottom: 10px;
 }
 .footer-row {
-    background-color: blue;
+    background-color: none;
     height: 50px;
 }
 
@@ -44,6 +44,13 @@ h1 {
     padding-top: 3rem;
     font-size: 1.2rem;
     color: #000000;
+}
+
+#img-leprechaun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
 }
 
 .container-fluid,
