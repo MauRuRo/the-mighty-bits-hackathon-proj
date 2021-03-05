@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block content %}
-   <div class="col-12 col-lg-8 order-lg-2">
+   <div class="col-12 col-lg-8 order-lg-2 d-flex justify-content-center">
        {% include 'trivia/includes/map.html' %}
    </div>
    <div class="col-12 col-lg-4 order-lg-1">
-        <div class="row">    
+        <div class="row justify-content-center">    
             {% include 'trivia/includes/landmark_image.html' %}
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="question">
                 {% include 'trivia/includes/question1.html' %}
             </div>
