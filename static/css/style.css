@@ -22,3 +22,31 @@ h1 {
     background-color: blue;
     height: 50px;
 }
+
+#question-form {
+    display: block;
+    max-width: 100%;
+    color:#fff;
+    margin: 45% 0 50px 60px;
+    padding: 30px; 
+}
+
+#question-form h4 {
+    color: #fafafa;
+    margin-bottom: 30px;
+}
+
+.next-button {
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: #fafafa;
+    color: darkgreen;
+    display: block;
+}
+
+.next-button:hover {
+    background-color: orangered;
+    color:#fafafa
+}
