@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet');
+
 body {
     font-family: 'Open Sans';
     color: white;
@@ -13,7 +15,7 @@ h1 {
     height: 100px;
 }
 .main-row {
-    background-color: grey;
+    background-color: none;
     min-height: calc(100vh - 100px - 50px);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,20 +25,31 @@ h1 {
     height: 50px;
 }
 
+#hero-image {
+    background: url("/media/dublin.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 #heading-home {
     text-align: center;
     padding-top: 2rem;
     font-size: 2.1rem;
-    font-weight: 400;
-    color: #000000;
+    font-weight: 500;
+    color: #5c3008;
+    font-family:'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 #sub-heading-home {
     text-align: center;
-    padding-top: 1rem;
     font-size: 1.7rem;
-    font-weight: 300;
-    color: #000000;
+    font-weight: 600;
+    color: #FF7900;
+    text-shadow: 0.1rem 0.1rem #b89d9f;
+    font-family: 'Roboto', sans-serif;
 }
 
 .para-home {
@@ -46,11 +59,19 @@ h1 {
     color: #000000;
 }
 
-#img-leprechaun {
+/* walking leprechaun - It doesn't work - TO CHECK*/
+
+#leprechaun {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
+    animation: walk 5s infinite;
+}
+
+@keyframes walk {
+  from {left: 0px;}
+  to {right: 200px;}
 }
 
 .container-fluid,
