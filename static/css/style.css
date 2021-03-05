@@ -15,8 +15,6 @@ h1 {
 .main-row {
     background-color: grey;
     min-height: calc(100vh - 100px - 50px);
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 .footer-row {
     background-color: blue;
@@ -59,4 +57,11 @@ h1 {
 .landmark-image img {
     max-width: 100%;
     max-height: 40vh;
+}
+
+.lm-i-1 {
+    background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
 }
