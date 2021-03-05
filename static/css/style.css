@@ -65,3 +65,59 @@ h1 {
     background-position: center;
     height: 40vh;
 }
+
+.lm-i-2 {
+    background: url('/media/stephen-bergin-jEQydmwFlFM-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-3 {
+    background: url('media/gettyimages-482763839-612x612.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-4 {
+    background: url('media/matheus-camara-da-silva-NL2ORrGh8KM-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-5 {
+    background: url('media/jeremy-matteo-KnQBkeR7y1I-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-6 {
+    background: url('media/photo-1542382841912-407ced1ff6d9.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-7 {
+    background: url('media/ana-ribeiro-KhoKK3CMgTk-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-8 {
+    background: url('media/todd-poirier-9k9AGYjJny0-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.lm-i-9 {
+    background: url('media/cropped_CUT_arthur_Guinness.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
