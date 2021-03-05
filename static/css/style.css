@@ -74,6 +74,30 @@ h1 {
   to {right: 200px;}
 }
 
+/* button on the landing page */
+.btn-home {
+    background-color: #FF7900;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+}
+
+/* Hover effect for button on the landing page
+box-shadow was used to overwrite Bootstrap btn-secondary color */
+.btn-more:hover,
+.btn-more:focus,
+.btn-more:active {
+    background-color: #916750 !important;
+    border-color: #5C3324 !important;
+    box-shadow: 0.2rem 0.2rem #5C3324 !important;
+    border: 0.12rem solid;
+}
+
 .container-fluid,
 .row {
     margin: 0;
