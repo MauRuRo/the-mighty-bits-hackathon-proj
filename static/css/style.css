@@ -31,7 +31,12 @@ h1 {
     padding: 30px; 
 }
 
+#quiz {
+    
+}
+
 #question-form h4 {
+    font-size: 130%;
     color: #fafafa;
     margin-bottom: 30px;
 }
@@ -39,7 +44,7 @@ h1 {
 .next-button {
     margin-top: 30px;
     border-radius: 6px;
-    padding: 15px 32px 15px 32px;
+    padding: 10px 20px 10px 20px;
     font-size: 100%;
     background-color: #fafafa;
     color: darkgreen;
@@ -49,4 +54,8 @@ h1 {
 .next-button:hover {
     background-color: orangered;
     color:#fafafa
+}
+
+.landmark-image {
+
 }
