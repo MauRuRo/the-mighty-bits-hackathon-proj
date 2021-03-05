@@ -1,6 +1,11 @@
 from django.shortcuts import render
 
 
-def index(request):
+def trivia(request):
     """ a view to render the home page """
-    return render(request, 'trivia/home.html')
+    return render(request, 'trivia/trivia.html')
+
+
+def home(request):
+    """ a view to render the home page """
+    return render(request, 'trivia/landingpage.html')
