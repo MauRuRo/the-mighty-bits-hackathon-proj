@@ -67,15 +67,12 @@ h1 {
     background-position: center;
     height: 40vh;
 }
-<<<<<<< HEAD
 /*---- Google Maps ----*/
-=======
 /* Google Maps */
 .map-container {
     width: 100%;
     height: auto;
 }
->>>>>>> 4938935155cbbc0c2226c1a6a92022174c9f15ea
 #map {
     min-height: 360px;
 }
