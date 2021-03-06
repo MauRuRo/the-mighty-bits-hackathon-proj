@@ -20,7 +20,6 @@ h1 {
     background-color: blue;
     height: 50px;
 }
-<<<<<<< HEAD
 
 #question-form {
     /* display: block; */
@@ -65,9 +64,7 @@ h1 {
     background-size: cover;
     background-position: center;
     height: 40vh;
-=======
 /*---- Google Maps ----*/
-#maps {
+#map {
     min-height: 360px;
->>>>>>> lm_maps
 }
