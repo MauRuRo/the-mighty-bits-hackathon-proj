@@ -13,6 +13,7 @@ h1 {
 .header-row {
     /* background-color: #42b042c7; */
     background-color: green;
+    background-color: #42b042c7;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -27,6 +28,7 @@ h1 {
 }
 .footer-row {
     background-color: green;
+    background-color: none;
     height: 50px;
     width: 100%;
     position: fixed;
