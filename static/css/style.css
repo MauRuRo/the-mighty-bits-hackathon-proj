@@ -27,9 +27,8 @@ h1 {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-
+/*-- HEADER --*/
 .header-row {
-    /* background-color: #42b042c7; */
     background-color: green;
     height: 100px;
     width: 100%;
@@ -37,6 +36,14 @@ h1 {
     top: 0px;
     z-index: 999;
 }
+
+.logo {
+    max-width: 130px;
+    max-height: 120px;
+    margin-left: 15px;
+}
+
+
 .main-row {
     background-color: none;
     min-height: calc(100vh - 100px - 50px);
@@ -44,7 +51,8 @@ h1 {
     margin-top: 100px!important;
 }
 .footer-row {
-    background-color: green;
+    background-color:green;
+    background-color: none;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -63,20 +71,35 @@ h1 {
     
 }
 
-#question-form h4 {
+#question-form h5 {
     font-size: 130%;
     color: black;
     margin-bottom: 30px;
 }
 
+    /* display: block; */
+    max-width: 100%;
+    color:#fff;
+    /* margin: 45% 0 50px 60px; */
+    padding: 30px; 
+}
+
+#quiz {
+    
+}
+
+#question-form h5 {
+    font-size: 130%;
+    color: #fafafa;
+    margin-bottom: 30px;
+}
+
 .next-button {
-    margin-top: 30px;
-    border-radius: 6px;
     padding: 10px 20px 10px 20px;
     font-size: 100%;
     background-color: #fafafa;
     color: darkgreen;
-    display: block;
+    display: inline-block;
 }
 
 .next-button:hover {
@@ -89,11 +112,65 @@ h1 {
     max-height: 40vh;
 }
 
-.lm-i-1 {
+.lm-image {
+    height: 30vh;
+}
+#lm-i-1 {
     background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 40vh;
+}
+#lm-i-2 {
+    background: url('/media/stephen-bergin-jEQydmwFlFM-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-3 {
+    background: url('/media/gettyimages-482763839-612x612.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-4 {
+    background: url('/media/matheus-camara-da-silva-NL2ORrGh8KM-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-5 {
+    background: url('/media/jeremy-matteo-KnQBkeR7y1I-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-6 {
+    background: url('/media/photo-1542382841912-407ced1ff6d9.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-7 {
+    background: url('/media/ana-ribeiro-KhoKK3CMgTk-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-8 {
+    background: url('/media/todd-poirier-9k9AGYjJny0-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lm-i-9 {
+    background: url('/media/cropped_CUT_arthur_Guinness.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#score-container {
+    text-align: right;
+    color: white;
 }
 /*---- Google Maps ----*/
 /* Google Maps */
@@ -103,6 +180,7 @@ h1 {
 }
 #map {
     height: 100%;
+    min-height: 30vh;
 }
 #hero-image {
     background: url("/media/dublin.jpg") no-repeat center;
@@ -130,29 +208,42 @@ h1 {
     text-shadow: 0.1rem 0.1rem #b89d9f;
     font-family: 'Roboto', sans-serif;
     margin-top: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #000000;
 }
 
 .para-home {
     text-align: center;
     padding-top: 2.5rem;
+    padding-top: 3rem;
     font-size: 1.2rem;
     color: #000000;
 }
 
 /* walking leprechaun - It doesn't work - TO CHECK*/
-
+/* #lep-div {
+    width: 75vw;
+} */
 #leprechaun {
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
-    animation: walk 5s infinite;
+    margin-top: 1rem; */
+    position: relative;
+    /* left: 0px; */
+    margin: 0 auto;
+    animation: walk 3s linear infinite;
 }
 
 @keyframes walk {
-  from {left: 0px;}
-  to {right: 200px;}
+    0% {opacity: 0; left: -100px;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; left: 100px;}
 }
+
 
 /* button on the landing page */
 .btn-home {
@@ -262,6 +353,23 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 .close:hover {
     color: #fff;
 }
+/* answer styles */
+.wrong {
+    color: red;
+}
+.correct {
+    color: green;
+}
+
+.fa-spin {
+    margin-left: 10px;
+    color: grey;
+}
+
+.wait-text {
+    display: inline;
+    color: grey;
+}
 
 /* Media Queries */
 
@@ -275,3 +383,15 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 */
+
+/* #lm-i-1 {
+    background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+} */
+/*---- Google Maps ----*/                    
+/* #map {
+    min-height: 360px;
+} */
+        
