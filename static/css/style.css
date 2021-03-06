@@ -60,25 +60,39 @@ h1 {
     max-width: 100%;
     max-height: 40vh;
 }
-#hero-image {
-    background: url("/media/dublin.jpg") no-repeat center;
-    background-size: cover;
+.jumbotron {
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    justify-content: center;
 }
 
-#heading-home {
+.jumbotron::before {    
+    content: "";
+    background: url(/media/dublin_home.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    
+}
+
+.heading-home {
     text-align: center;
     padding-top: 2rem;
     font-size: 2.1rem;
     font-weight: 500;
-    color: #5c3008;
+    color: black;
     font-family:'Roboto', sans-serif;
     text-transform: uppercase;
+    z-index: 1;
+    position: relative;
 }
 
-#sub-heading-home {
+.sub-heading-home {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 600;
@@ -90,6 +104,7 @@ h1 {
     font-size: 1.7rem;
     font-weight: 300;
     color: #000000;
+    position: relative;
 }
 
 .para-home {
@@ -98,20 +113,20 @@ h1 {
     padding-top: 3rem;
     font-size: 1.2rem;
     color: #000000;
+    position: relative;
 }
-
-/* walking leprechaun - It doesn't work - TO CHECK*/
-
+/* walking leprechaun */
 #leprechaun {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     animation: walk 5s infinite;
+    position: relative;
 }
 
 @keyframes walk {
-  from {left: 0px;}
+  from {left: 100px;}
   to {right: 200px;}
 }
 
@@ -125,13 +140,14 @@ h1 {
     padding: 0.3rem 0.7rem;
     font-size: 1rem;
     border-radius: 0.4rem;
+    position: relative;
 }
 
 /* Hover effect for button on the landing page
 box-shadow was used to overwrite Bootstrap btn-secondary color */
-.btn-more:hover,
-.btn-more:focus,
-.btn-more:active {
+.btn-home:hover,
+.btn-home:focus,
+.btn-home:active {
     background-color: #ca660cdb !important;
     border-color: #d86d0ddb !important;
     box-shadow: 0.2rem 0.2rem #5C3324 !important;
@@ -140,12 +156,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 
 .btn-main {
     margin-top: 2.5rem;
-}
-
-.container-fluid,
-.row {
-    margin: 0;
-    padding: 0;
 }
 
 
