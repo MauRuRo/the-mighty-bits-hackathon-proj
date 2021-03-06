@@ -64,7 +64,13 @@ h1 {
     background-size: cover;
     background-position: center;
     height: 40vh;
+}
 /*---- Google Maps ----*/
+.map-container {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
 #map {
     min-height: 360px;
 }
