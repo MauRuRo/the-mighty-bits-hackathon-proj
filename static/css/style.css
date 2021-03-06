@@ -71,10 +71,10 @@ h1 {
 /* Google Maps */
 .map-container {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 #map {
-    min-height: 360px;
+    height: 100%;
 }
 #hero-image {
     background: url("/media/dublin.jpg") no-repeat center;
