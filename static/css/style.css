@@ -27,15 +27,23 @@ h1 {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-
+/*-- HEADER --*/
 .header-row {
-    background-color: green;
+    background-color: #42b042c7;
     height: 100px;
     width: 100%;
     position: fixed;
     top: 0px;
     z-index: 999;
 }
+
+.logo {
+    max-width: 130px;
+    max-height: 120px;
+    margin-left: 15px;
+}
+
+
 .main-row {
     background-color: none;
     min-height: calc(100vh - 100px - 50px);
@@ -43,7 +51,7 @@ h1 {
     margin-top: 100px!important;
 }
 .footer-row {
-    background-color: green;
+    background-color:#42b042c7;
     background-color: none;
     height: 50px;
     width: 100%;
