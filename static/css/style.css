@@ -23,7 +23,7 @@ h1 {
     height: 50px;
 }
 
-#question-form {
+.question-form {
     /* display: block; */
     max-width: 100%;
     color:black;
