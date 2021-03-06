@@ -71,11 +71,17 @@ h1 {
     max-height: 40vh;
 }
 
+.lm-image {
+    height: 30vh;
+}
 .lm-i-1 {
     background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 40vh;
+}
+
+#score-container {
+    text-align: right;
 }
 /*---- Google Maps ----*/
 /* Google Maps */
@@ -85,6 +91,7 @@ h1 {
 }
 #map {
     height: 100%;
+    min-height: 30vh;
 }
 #hero-image {
     background: url("/media/dublin.jpg") no-repeat center;
