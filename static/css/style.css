@@ -93,7 +93,7 @@ h1 {
     font-size: 100%;
     background-color: #fafafa;
     color: darkgreen;
-    display: block;
+    display: inline-block;
 }
 
 .next-button:hover {
@@ -289,6 +289,22 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 
 .close:hover {
     color: #fff;
+/* answer styles */
+.wrong {
+    color: red;
+}
+.correct {
+    color: green;
+}
+
+.fa-spin {
+    margin-left: 10px;
+    color: grey;
+}
+
+.wait-text {
+    display: inline;
+    color: grey;
 }
 
 /* Media Queries */
