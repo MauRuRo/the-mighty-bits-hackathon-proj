@@ -233,6 +233,7 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 	border-radius: 10px;
     background: #42b042c7;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
     font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
