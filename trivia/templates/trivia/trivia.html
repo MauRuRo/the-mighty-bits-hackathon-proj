@@ -42,6 +42,8 @@
         });
     }
 //Answer 1 location St Stephens Green
+    document.getElementById("q1-btn").addEventListener("click", mapStephensGreen);
+
     function mapStephensGreen() {
         const stephensGreen = { lat: 53.336989909757534, lng: -6.260008930684645 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -55,6 +57,8 @@
         });
     };
 //Answer 2 location Trinity College
+    document.getElementById("q2-btn").addEventListener("click", mapTrinityCollege);
+    
     function mapTrinityCollege() {
         const trinityCollege = { lat: 53.34373583273199, lng: -6.254568919628764 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -62,8 +66,15 @@
             center: trinityCollege,
             animation: google.maps.Animation.DROP
         });
+        const marker = new google.maps.Marker({
+            position: trinityCollege,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     };
 //Answer 3 location Ha'penny Bridge
+    document.getElementById("q3-btn").addEventListener("click", mapPennyBridge);
+
     function mapPennyBridge() {
         const pennyBridge = { lat: 53.34636712861372, lng: -6.262660912822005 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -71,8 +82,15 @@
             center: pennyBridge,
             animation: google.maps.Animation.DROP
         });
+        const marker = new google.maps.Marker({
+            position: pennyBridge,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     };
 //Answer 4 location Temple Bar
+    document.getElementById("q4-btn").addEventListener("click", mapTempleBar);
+
     function mapTempleBar() {
         const templeBar = { lat: 53.34492482071045, lng: -6.267571428565106 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -80,8 +98,15 @@
             center: templeBar,
             animation: google.maps.Animation.DROP
         });
+        const marker = new google.maps.Marker({
+            position: templeBar,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     };
 //Answer 5 location Dublin Castle
+    document.getElementById("q5-btn").addEventListener("click", mapDublinCastle);
+
     function mapDublinCastle() {
         const dublinCastle = { lat: 53.34295013374614, lng: -6.267144087688027 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -89,8 +114,15 @@
             center: dublinCastle,
             animation: google.maps.Animation.DROP
         });
+        const marker = new google.maps.Marker({
+            position: dublinCastle,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     };
 //Answer 6 location St Patricks Cathedral
+    document.getElementById("q6-btn").addEventListener("click", mapPatsCath);
+
     function mapPatsCath() {
         const patsCath = { lat: 53.33968193273843, lng: -6.270757869836692 };
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -98,13 +130,25 @@
             center: patsCath,
             animation: google.maps.Animation.DROP
         });
+        const marker = new google.maps.Marker({
+            position: patsCath,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     };
 //Answer 7 location Guinness Storehouse
+    document.getElementById("q7-btn").addEventListener("click", mapGuinnStore);
+
     function mapGuinnStore() {
         const guinnStore = { lat: 53.34213811762754, lng: -6.286056642851632 };
         const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
             center: guinnStore,
+            animation: google.maps.Animation.DROP
+        });
+        const marker = new google.maps.Marker({
+            position: guinnStore,
+            map: map,
             animation: google.maps.Animation.DROP
         });
     };
