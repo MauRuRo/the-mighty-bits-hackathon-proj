@@ -22,3 +22,7 @@ h1 {
     background-color: blue;
     height: 50px;
 }
+/*---- Google Maps ----*/
+#maps {
+    min-height: 360px;
+}
