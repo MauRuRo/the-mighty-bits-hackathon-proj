@@ -10,14 +10,19 @@ $(document).ready(function(){
     $(document).on("click", "input", function(){
         $("input:visible").removeAttr('checked')
         $(this).attr('checked', 'checked')
-        $(".next-button:visible").removeAttr('disabled')
+        if ($(".wait-text:visible").length == 0){
+            $(".next-button:visible").removeAttr('disabled')
+        }
+        
     })
     $(document).on("click", "label", function(){
         let input_name = $(this).attr('for')
         let radio_input = $(`input:visible[name='${input_name}']`)
         $("input:visible").removeAttr('checked')
         radio_input.attr('checked', 'checked')
-        $(".next-button:visible").removeAttr('disabled')
+        if ($(".wait-text:visible").length == 0){
+            $(".next-button:visible").removeAttr('disabled')
+        }
     })
     // check if answer is correct: add appropriate css and move to next question
     $(document).on("click", ".next-button", function(){
@@ -49,7 +54,6 @@ $(document).ready(function(){
             current.hide()
             next.show()
             let currentimage = $(".lm-image").attr("id")
-            console.log(currentimage)
             let imageno = parseInt(currentimage.split("-")[2])
             let newno = imageno + 1
             let newid = "lm-i-" + newno
