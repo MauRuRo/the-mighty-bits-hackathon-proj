@@ -5,6 +5,10 @@ $(document).ready(function(){
         console.log("Checking connection");
     })
     
+    // hide all questions except the first one
+    $(".question-form").hide()
+    $("#form1").show()
+    
 })
 
 // //Initialise map function

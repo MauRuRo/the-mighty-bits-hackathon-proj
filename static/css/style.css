@@ -2,7 +2,7 @@
 /* Standard styles */
 body {
     font-family: 'Open Sans';
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -29,22 +29,32 @@ h1 {
 }
 
 .header-row {
-    background-color: #42b042c7;
+    /* background-color: #42b042c7; */
+    background-color: green;
     height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
 }
 .main-row {
     background-color: none;
     min-height: calc(100vh - 100px - 50px);
+    margin-bottom: 50px!important;
+    margin-top: 100px!important;
 }
 .footer-row {
-    background-color: none;
+    background-color: green;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
-#question-form {
+.question-form {
     /* display: block; */
     max-width: 100%;
-    color:#fff;
+    color:black;
     /* margin: 45% 0 50px 60px; */
     padding: 30px; 
 }
@@ -55,7 +65,7 @@ h1 {
 
 #question-form h4 {
     font-size: 130%;
-    color: #fafafa;
+    color: black;
     margin-bottom: 30px;
 }
 
@@ -85,13 +95,14 @@ h1 {
     background-position: center;
     height: 40vh;
 }
+/*---- Google Maps ----*/
 /* Google Maps */
 .map-container {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 #map {
-    min-height: 360px;
+    height: 100%;
 }
 #hero-image {
     background: url("/media/dublin.jpg") no-repeat center;
