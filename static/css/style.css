@@ -73,10 +73,6 @@ h1 {
     height: auto;
 }
 #map {
-<<<<<<< HEAD
-    height: 100%;
-}
-=======
     min-height: 360px;
 }
 #hero-image {
@@ -175,4 +171,3 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 */
->>>>>>> 49350f0cc67a1b8a6136f0ed146f003e7168c1da
