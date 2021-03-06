@@ -87,11 +87,16 @@ h1 {
     text-shadow: 0.1rem 0.1rem #b89d9f;
     font-family: 'Roboto', sans-serif;
     margin-top: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #000000;
 }
 
 .para-home {
     text-align: center;
     padding-top: 2.5rem;
+    padding-top: 3rem;
     font-size: 1.2rem;
     color: #000000;
 }
