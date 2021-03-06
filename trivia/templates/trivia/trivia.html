@@ -20,16 +20,32 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
+//Default map location
     function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            disableDefaultUI: true,
-            center: {
-                lat: 53.35001680243868, //Dublin
-                lng: -6.262019153232362
-            }
+        const dublin = { lat: 53.35001680243868, lng: -6.262019153232362 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: dublin
         });
-    };
+        const marker = new google.maps.Marker({
+            position: dublin,
+            map: map,
+            animation: google.maps.Animation.DROP,
+        });
+    }
+//Answer 1 location St Stephens Green
+    function mapStephensGreen() {
+        const stephensGreen = { lat: 53.336989909757534, lng: -6.260008930684645 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: stephensGreen
+        });
+        const marker = new google.maps.Marker({
+            position: stephensGreen,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+    }
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <!-- Google Maps -->
