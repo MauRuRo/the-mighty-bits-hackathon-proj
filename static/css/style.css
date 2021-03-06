@@ -17,8 +17,6 @@ h1 {
 .main-row {
     background-color: none;
     min-height: calc(100vh - 100px - 50px);
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 .footer-row {
     background-color: none;
@@ -26,10 +24,10 @@ h1 {
 }
 
 #question-form {
-    display: block;
+    /* display: block; */
     max-width: 100%;
     color:#fff;
-    margin: 45% 0 50px 60px;
+    /* margin: 45% 0 50px 60px; */
     padding: 30px; 
 }
 
@@ -58,8 +56,9 @@ h1 {
     color:#fafafa
 }
 
-.landmark-image {
-
+.landmark-image img {
+    max-width: 100%;
+    max-height: 40vh;
 }
 #hero-image {
     background: url("/media/dublin.jpg") no-repeat center;
@@ -162,3 +161,13 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 */
+
+.lm-i-1 {
+    background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+/*---- Google Maps ----*/
+#map {
+    min-height: 360px;
+}
