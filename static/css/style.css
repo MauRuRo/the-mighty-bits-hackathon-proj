@@ -115,19 +115,26 @@ h1 {
     position: relative;
 }
 
-/* walking leprechaun */
+/* walking leprechaun - It doesn't work - TO CHECK*/
+/* #lep-div {
+    width: 75vw;
+} */
 #leprechaun {
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
-    animation: walk 5s infinite;
+    margin-top: 1rem; */
     position: relative;
+    /* left: 0px; */
+    margin: 0 auto;
+    animation: walk 3s linear infinite;
 }
 
 @keyframes walk {
-  from {left: 100px;}
-  to {right: 400px;}
+    0% {opacity: 0; left: -100px;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; left: 100px;}
 }
 
 /* button on the landing page */
