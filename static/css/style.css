@@ -187,59 +187,39 @@ h1 {
     background-size: cover;
     position: relative;
     height: 100%;
-.jumbotron {
-    min-height: 100vh;
     width: 100%;
-    justify-content: center;
 }
 
-.jumbotron::before {    
-    min-height: 100vh;
-    width: 100%;
-    content: "";
-    background: url(/media/dublin_home.jpg) no-repeat center; /* Photo by Matheus Câmara da Silva on Unsplash */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
-    justify-content: center;
-    
-}
-
-.heading-home {
+#heading-home {
     text-align: center;
     padding-top: 2rem;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 500;
-    color: black;
+    color: #5c3008;
     font-family:'Roboto', sans-serif;
     text-transform: uppercase;
-    z-index: 1;
-    position: relative;
 }
 
-.sub-heading-home {
+#sub-heading-home {
     text-align: center;
-    font-size: 2.3rem !important;
-    font-weight: 500 !important;
-    color: #bd2130;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FF7900;
+    text-shadow: 0.1rem 0.1rem #b89d9f;
     font-family: 'Roboto', sans-serif;
     margin-top: 1.5rem;
+    padding-top: 1rem;
     font-size: 1.7rem;
     font-weight: 300;
-    position: relative;
+    color: #000000;
 }
 
 .para-home {
     text-align: center;
     padding-top: 2.5rem;
     padding-top: 3rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #0e0e0e;
-    position: relative;
+    font-size: 1.2rem;
+    color: #000000;
 }
 
 /* walking leprechaun - It doesn't work - TO CHECK*/
@@ -275,14 +255,13 @@ h1 {
     padding: 0.3rem 0.7rem;
     font-size: 1rem;
     border-radius: 0.4rem;
-    position: relative;
 }
 
 /* Hover effect for button on the landing page
 box-shadow was used to overwrite Bootstrap btn-secondary color */
-.btn-home:hover,
-.btn-home:focus,
-.btn-home:active {
+.btn-more:hover,
+.btn-more:focus,
+.btn-more:active {
     background-color: #ca660cdb !important;
     border-color: #d86d0ddb !important;
     box-shadow: 0.2rem 0.2rem #5C3324 !important;

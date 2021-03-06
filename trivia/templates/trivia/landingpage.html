@@ -3,28 +3,31 @@
 
 {% block content %}
 
+<!--Hero image-->
+<div id="hero-image" class="img-fluid"></div>
+
 <!--Home section-->
 <section class="home">
-    <!--Hero image-->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="heading-home">trivia quiz!</h1>   
-            <h2 class="sub-heading-home">How much do you know about Dublin?</h2>
-            <p class="para-home">
-                Follow Lochlann the leprechaun to see what you really know...
-            </p>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+            <h1 id="heading-home">trivia quiz</h1>
+                <h2 id="sub-heading-home">How much do you know about Dublin?</h2>
+                    <p class="para-home">
+                        Follow Lochlann the leprechaun to see<br> what you really know...
+                    </p>
+            </div>
             <!--leprechaun icon - credit: Flaticon (https://www.flaticon.com/)-->
             <!-- <div id="lep-div"> -->
             <img id="leprechaun" src="{{MEDIA_URL}}leprechaun128x128.png" alt="leprechaun">
             <!-- </div> -->
-
-            <!--add link to the game-->
-            <div class="text-center btn-main">
-                <a href="{% url 'trivia' %}" class="btn btn-secondary btn-xs btn-home mt-2">
-                    Start Game
-                </a>
-            </div>
         </div>
+    </div>
+    <!--add link to the game-->
+    <div class="text-center btn-main">
+        <a href="{% url 'trivia' %}" class="btn btn-secondary btn-xs btn-home mt-2">
+            Start Game
+        </a>
     </div>
 </section>
 {% endblock %}
