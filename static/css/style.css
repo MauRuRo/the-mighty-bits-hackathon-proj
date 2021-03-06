@@ -11,16 +11,26 @@ h1 {
     cursor: pointer;
 }
 .header-row {
-    background-color: #42b042c7;
+    /* background-color: #42b042c7; */
+    background-color: green;
     height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
 }
 .main-row {
     background-color: none;
     min-height: calc(100vh - 100px - 50px);
+    margin-bottom: 50px!important;
+    margin-top: 100px!important;
 }
 .footer-row {
-    background-color: none;
+    background-color: green;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 .question-form {
