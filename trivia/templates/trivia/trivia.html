@@ -28,6 +28,10 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
+
+//Empty Array to store markers
+let markers = [];
+
 //Default map location
     function initMap() {
         const dublin = { lat: 53.35001680243868, lng: -6.262019153232362 };
@@ -55,6 +59,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 2 location Trinity College
     document.getElementById("q2-btn").addEventListener("click", mapTrinityCollege);
@@ -71,6 +76,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 3 location Ha'penny Bridge
     document.getElementById("q3-btn").addEventListener("click", mapPennyBridge);
@@ -87,6 +93,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 4 location Temple Bar
     document.getElementById("q4-btn").addEventListener("click", mapTempleBar);
@@ -103,6 +110,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 5 location Dublin Castle
     document.getElementById("q5-btn").addEventListener("click", mapDublinCastle);
@@ -119,6 +127,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 6 location St Patricks Cathedral
     document.getElementById("q6-btn").addEventListener("click", mapPatsCath);
@@ -135,6 +144,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 //Answer 7 location Guinness Storehouse
     document.getElementById("q7-btn").addEventListener("click", mapGuinnStore);
@@ -151,6 +161,7 @@
             map: map,
             animation: google.maps.Animation.DROP
         });
+        markers.push(marker);
     };
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
