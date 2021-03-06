@@ -48,6 +48,13 @@ $(document).ready(function(){
             if (current.attr("id") != "form9"){
             current.hide()
             next.show()
+            let currentimage = $(".lm-image").attr("id")
+            console.log(currentimage)
+            let imageno = parseInt(currentimage.split("-")[2])
+            let newno = imageno + 1
+            let newid = "lm-i-" + newno
+            $(".lm-image").removeAttr("id").attr("id", newid)
+
             } else {
                 alert('end of trivia game')
             }
