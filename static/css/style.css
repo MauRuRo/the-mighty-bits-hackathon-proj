@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet');
+
 body {
     font-family: 'Open Sans';
     color: white;
@@ -9,15 +11,15 @@ h1 {
     cursor: pointer;
 }
 .header-row {
-    background-color: green;
+    background-color: #42b042c7;
     height: 100px;
 }
 .main-row {
-    background-color: grey;
+    background-color: none;
     min-height: calc(100vh - 100px - 50px);
 }
 .footer-row {
-    background-color: blue;
+    background-color: none;
     height: 50px;
 }
 
@@ -71,5 +73,106 @@ h1 {
     height: auto;
 }
 #map {
+<<<<<<< HEAD
     height: 100%;
 }
+=======
+    min-height: 360px;
+}
+#hero-image {
+    background: url("/media/dublin.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#heading-home {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #5c3008;
+    font-family:'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+#sub-heading-home {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FF7900;
+    text-shadow: 0.1rem 0.1rem #b89d9f;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.5rem;
+}
+
+.para-home {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* walking leprechaun - It doesn't work - TO CHECK*/
+
+#leprechaun {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    animation: walk 5s infinite;
+}
+
+@keyframes walk {
+  from {left: 0px;}
+  to {right: 200px;}
+}
+
+/* button on the landing page */
+.btn-home {
+    background-color: #FF7900;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+/* Hover effect for button on the landing page
+box-shadow was used to overwrite Bootstrap btn-secondary color */
+.btn-more:hover,
+.btn-more:focus,
+.btn-more:active {
+    background-color: #ca660cdb !important;
+    border-color: #d86d0ddb !important;
+    box-shadow: 0.2rem 0.2rem #5C3324 !important;
+    border: 0.12rem solid;
+}
+
+.btn-main {
+    margin-top: 2.5rem;
+}
+
+.container-fluid,
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Media Queries */
+
+/* Display on medium screens (tablet devices) 
+@media screen and (min-width: 764px) {
+}
+
+/* Display on large devices 
+@media screen and (min-width: 1024px) {
+
+}
+
+*/
+>>>>>>> 49350f0cc67a1b8a6136f0ed146f003e7168c1da
