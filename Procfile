@@ -1,0 +1,1 @@
+web: gunicorn paddys_trivia.wsgi:application
