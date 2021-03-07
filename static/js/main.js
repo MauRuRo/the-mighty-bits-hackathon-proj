@@ -76,7 +76,7 @@ $(document).ready(function(){
             if (endresult > 50){
                 $("#endMessage").html("Congrats!")
             } else {
-                $("#endMessage").html("Too bad!")
+                $("#endMessage").html("Too bad, better luck next time!")
             }
         }, 3000)
     })
