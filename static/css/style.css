@@ -317,11 +317,17 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 	pointer-events: auto;
 }
 
+.modalDialog {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
 .modalDialog > div {
-    max-width: 30rem;
+    width: 50%;
     position: relative;
-	margin: 10% auto;
-    padding: 1rem 1rem 1rem 0;
+    margin: 10% auto;
+    padding: 0.75rem;
 	border-radius: 10px;
     background: #42b042c7;
     font-family: 'Roboto', sans-serif;
@@ -333,7 +339,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 
 .rules-header {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
 }
 
 .close {
@@ -376,7 +381,10 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 
 /* Media query for rules modal */
 /* Mobile */
-@media only screen and (min-device-width: 320px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     .modalDialog > div {
         width: 18rem;
     }
@@ -389,17 +397,15 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 /* Ipad */
-@media only screen and (device-width: 768px) {
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     .modalDialog > div {
-        width: 23rem;
-        padding: 0.75em;
+        width: 35rem;
     }
     .rules-header {
         font-size: 2rem;
     }
-    .rules-content > li {
-        font-size: 1.25rem;
-        margin-bottom: 1em;
+    .rules-content > p {
+        font-size: 1.75rem;
     }
     #fun-txt {
         font-size: 1.75rem;
@@ -412,15 +418,13 @@ and (min-width: 1024px) and (max-width: 1026px)
 and (max-height: 1366px) 
 and (-webkit-min-device-pixel-ratio: 1.5) {
     .modalDialog > div {
-        width: 30rem;
-        padding: 1em;
+        width: 45rem;
     }
     .rules-header {
-        font-size: 2.5rem;
-        margin-bottom: 1em;
+        font-size: 2.75rem;
     }
-    .rules-content > li {
-        font-size: 1.5rem;
+    .rules-content > p {
+        font-size: 2rem;
     }
     #fun-txt {
         font-size: 2rem;
