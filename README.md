@@ -1,8 +1,8 @@
-# Mighty Bytes
+# DISCOVER DUBLIN
 
 ### Overview
 
-This is The Mighty Bytes' March Hackathon project organized by Code Institute.
+This is The Mighty Bites' March Hackathon project organized by Code Institute.
 It's theme is **Saint Patrick's day**.
 
 This website is created to bring some fun to your family, so you can celebrate this special day together from home! 
