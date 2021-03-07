@@ -6,6 +6,11 @@ $(document).ready(function(){
     $(".question-form").hide()
     $("#form1").show()
 
+    $("#leprechaun").click(function(){
+        let url = window.location.href
+        url = url + "/trivia"
+        window.location.href = url
+    })
     // add attr checked for clicked answer
     $(document).on("click", "input", function(){
         $("input:visible").removeAttr('checked')

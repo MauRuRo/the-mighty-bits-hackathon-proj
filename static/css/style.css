@@ -227,6 +227,7 @@ h1 {
     width: 75vw;
 } */
 #leprechaun {
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
