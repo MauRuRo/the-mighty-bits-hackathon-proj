@@ -45,21 +45,32 @@ let markers = [];
             animation: google.maps.Animation.DROP,
         });
     }
+
+//Labels for markers in correlation with question number
+    const labels = "12345678910";
+    let labelIndex = 0;
+
 //Answer 1 location St Stephens Green
     document.getElementById("q1-btn").addEventListener("click", mapStephensGreen);
 
     function mapStephensGreen() {
         const stephensGreen = { lat: 53.336989909757534, lng: -6.260008930684645 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: stephensGreen
         });
+        //Add marker and label
         const marker = new google.maps.Marker({
             position: stephensGreen,
+            label: labels[labelIndex++ % labels.length],
             map: map,
-            animation: google.maps.Animation.DROP
+            animation: google.maps.Animation.DROP,
         });
-        markers.push(marker);
+        //Zoom out after showing answer location
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 2 location Trinity College
     document.getElementById("q2-btn").addEventListener("click", mapTrinityCollege);
@@ -67,16 +78,20 @@ let markers = [];
     function mapTrinityCollege() {
         const trinityCollege = { lat: 53.34373583273199, lng: -6.254568919628764 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: trinityCollege,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: trinityCollege,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 3 location Ha'penny Bridge
     document.getElementById("q3-btn").addEventListener("click", mapPennyBridge);
@@ -84,16 +99,20 @@ let markers = [];
     function mapPennyBridge() {
         const pennyBridge = { lat: 53.34636712861372, lng: -6.262660912822005 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: pennyBridge,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: pennyBridge,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 4 location Temple Bar
     document.getElementById("q4-btn").addEventListener("click", mapTempleBar);
@@ -101,16 +120,20 @@ let markers = [];
     function mapTempleBar() {
         const templeBar = { lat: 53.34492482071045, lng: -6.267571428565106 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: templeBar,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: templeBar,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 5 location Dublin Castle
     document.getElementById("q5-btn").addEventListener("click", mapDublinCastle);
@@ -118,16 +141,20 @@ let markers = [];
     function mapDublinCastle() {
         const dublinCastle = { lat: 53.34295013374614, lng: -6.267144087688027 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: dublinCastle,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: dublinCastle,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 6 location St Patricks Cathedral
     document.getElementById("q6-btn").addEventListener("click", mapPatsCath);
@@ -135,16 +162,20 @@ let markers = [];
     function mapPatsCath() {
         const patsCath = { lat: 53.33968193273843, lng: -6.270757869836692 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: patsCath,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: patsCath,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 //Answer 7 location Guinness Storehouse
     document.getElementById("q7-btn").addEventListener("click", mapGuinnStore);
@@ -152,16 +183,20 @@ let markers = [];
     function mapGuinnStore() {
         const guinnStore = { lat: 53.34213811762754, lng: -6.286056642851632 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
+            zoom: 12,
             center: guinnStore,
             animation: google.maps.Animation.DROP
         });
         const marker = new google.maps.Marker({
             position: guinnStore,
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         });
-        markers.push(marker);
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
     };
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
