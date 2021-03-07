@@ -30,7 +30,7 @@
 <script type="text/javascript">
 
 //Empty Array to store markers
-let markers = [];
+    let markers = [];
 
 //Default map location
     function initMap() {
@@ -46,7 +46,7 @@ let markers = [];
         });
     }
 
-//Labels for markers in correlation with question number
+    //Labels for markers in correlation with question number
     const labels = "12345678910";
     let labelIndex = 0;
 
@@ -56,7 +56,7 @@ let markers = [];
     function mapStephensGreen() {
         const stephensGreen = { lat: 53.336989909757534, lng: -6.260008930684645 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: stephensGreen
         });
         //Add marker and label
@@ -78,7 +78,7 @@ let markers = [];
     function mapTrinityCollege() {
         const trinityCollege = { lat: 53.34373583273199, lng: -6.254568919628764 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: trinityCollege,
             animation: google.maps.Animation.DROP
         });
@@ -99,7 +99,7 @@ let markers = [];
     function mapPennyBridge() {
         const pennyBridge = { lat: 53.34636712861372, lng: -6.262660912822005 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: pennyBridge,
             animation: google.maps.Animation.DROP
         });
@@ -120,7 +120,7 @@ let markers = [];
     function mapTempleBar() {
         const templeBar = { lat: 53.34492482071045, lng: -6.267571428565106 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: templeBar,
             animation: google.maps.Animation.DROP
         });
@@ -141,7 +141,7 @@ let markers = [];
     function mapDublinCastle() {
         const dublinCastle = { lat: 53.34295013374614, lng: -6.267144087688027 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: dublinCastle,
             animation: google.maps.Animation.DROP
         });
@@ -162,7 +162,7 @@ let markers = [];
     function mapPatsCath() {
         const patsCath = { lat: 53.33968193273843, lng: -6.270757869836692 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: patsCath,
             animation: google.maps.Animation.DROP
         });
@@ -183,7 +183,7 @@ let markers = [];
     function mapGuinnStore() {
         const guinnStore = { lat: 53.34213811762754, lng: -6.286056642851632 };
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 14,
             center: guinnStore,
             animation: google.maps.Animation.DROP
         });
