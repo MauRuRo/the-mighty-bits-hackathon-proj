@@ -82,13 +82,14 @@ h1 {
 .next-button {
     padding: 10px 20px 10px 20px;
     font-size: 100%;
+    border-radius: 0.4rem;
     background-color: #fafafa;
     color: darkgreen;
     display: inline-block;
 }
 
 .next-button:hover {
-    background-color: orangered;
+    background-color: #FF7900;
     color:#fafafa
 }
 
@@ -476,28 +477,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
-
-/* Display on medium screens (tablet devices) 
-@media screen and (min-width: 764px) {
-}
-
-/* Display on large devices 
-@media screen and (min-width: 1024px) {
-
-}
-
-*/
-
-/* #lm-i-1 {
-    background: url('/media/caro-lehmann-a8Itzshq7U8-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
-<<<<<<< HEAD
-} */   
-=======
-}
-
 .lm-i-2 {
     background: url('/media/stephen-bergin-jEQydmwFlFM-unsplash.jpg') no-repeat;
     background-size: cover;
@@ -553,4 +532,3 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     background-position: center;
     height: 40vh;
 }
->>>>>>> mz-README

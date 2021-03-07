@@ -48,7 +48,7 @@
     }
 
     //Labels for markers in correlation with question number
-    const labels = "12345678910";
+    const labels = "ABCDEFGHIJKLMNOPQRSTUV";
     let labelIndex = 0;
 
 //Answer 1 location St Stephens Green
@@ -199,6 +199,50 @@
         map.setCenter(marker.getPosition());
         window.setTimeout(function() {map.setZoom(pos);},3000);
     };
+
+//Answer 8 location The Clarence Hotel
+    document.getElementById("q8-btn").addEventListener("click", mapClarenceHotel);
+
+    function mapClarenceHotel() {
+        const clarenceHotel = { lat: 53.34539169124294, lng: -6.266855052136041 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: clarenceHotel,
+            animation: google.maps.Animation.DROP
+        });
+        const marker = new google.maps.Marker({
+            position: clarenceHotel,
+            label: labels[labelIndex++ % labels.length],
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
+    };
+//Answer 9 location Thomas Street
+    document.getElementById("q9-btn").addEventListener("click", mapThomasStreet);
+
+    function mapThomasStreet() {
+        const thomasStreet = { lat: 53.3430123, lng: -6.2838711 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: thomasStreet,
+            animation: google.maps.Animation.DROP
+        });
+        const marker = new google.maps.Marker({
+            position: thomasStreet,
+            label: labels[labelIndex++ % labels.length],
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+        let pos = map.getZoom();
+        map.setZoom(16);
+        map.setCenter(marker.getPosition());
+        window.setTimeout(function() {map.setZoom(pos);},3000);
+    };
+    
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <!-- Google Maps -->
