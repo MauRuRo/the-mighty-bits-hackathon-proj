@@ -371,6 +371,67 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     color: grey;
 }
 
+/* End Page  */
+.CongratsText{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.CompletedPara{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#endscore{
+    color: red;
+}
+
+.PotOfGold {
+   text-align: center;
+}
+
+.PotOfGold img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/*-- For medium or smaller screens --*/
+@media only screen and (max-width: 768px) {
+    .CongratsText{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.CompletedPara{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#endscore{
+    color: red;
+}
+
+.PotOfGold {
+   text-align: center;
+}
+
+.PotOfGold img {
+    max-width: 150px;
+    max-height: 150px;
+}
+}
+
+
 /* Media Queries */
 
 /* Media query for rules modal */
@@ -385,6 +446,7 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     .rules-content > li {
         font-size: 1rem;
     }
+
 }
 
 /* Ipad */
@@ -425,6 +487,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 2rem;
     }
 }
+
+
 /* Display on medium screens (tablet devices) 
 @media screen and (min-width: 764px) {
 }

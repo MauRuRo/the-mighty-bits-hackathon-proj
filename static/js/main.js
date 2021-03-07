@@ -63,8 +63,11 @@ $(document).ready(function(){
                 $("#map-div").hide().removeClass("d-md-block")
                 $("#question-div").hide()
                 $("#endpage-div").removeAttr('hidden').show()
+                $("#scoreTitle").hide()
+                var endscore = $('#score');
+                $("#endscore").html(endscore)
             }
-        }, 3000)
+        }) // add , 3000) back 
     })
     
     // move to next question
