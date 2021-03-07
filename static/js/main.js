@@ -60,7 +60,9 @@ $(document).ready(function(){
             $(".lm-image").removeAttr("id").attr("id", newid)
 
             } else {
-                alert('end of trivia game')
+                $("#map-div").hide().removeClass("d-md-block")
+                $("#question-div").hide()
+                $("#endpage-div").removeAttr('hidden').show()
             }
         }, 3000)
     })
