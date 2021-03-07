@@ -2,12 +2,19 @@
 
 <h1 class="CongratsText">You completed the game!</h1>
 
-<p class="CompletedPara">Congrats!<br>
-Your score is: <span id="endscore"></span>/90
+<p class="CompletedPara">Your score is: <span id="endscore"></span>/90<br>
+<span id="endMessage"></span>
 </p>
+
+<div class="text-center btn-main">
+    <a href="{% url 'trivia' %}" class="btn btn-secondary btn-xs btn-home mt-2">
+        Play Again!
+    </a>
+</div>
 <div class="PotOfGold">
 <img src="{{ MEDIA_URL }}pot_of_gold.jpeg"> 
 </div>
+
 
 
 

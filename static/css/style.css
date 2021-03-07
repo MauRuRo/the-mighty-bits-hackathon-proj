@@ -384,7 +384,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 30px;
-    margin-bottom: 10px;
 }
 
 #endscore{
@@ -396,8 +395,8 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 .PotOfGold img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /*-- For medium or smaller screens --*/
@@ -414,7 +413,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 #endscore{
@@ -426,8 +424,8 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 .PotOfGold img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
 }
 }
 

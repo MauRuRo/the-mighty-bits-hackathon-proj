@@ -67,7 +67,13 @@ $(document).ready(function(){
                 var endscore = $('#score');
                 $("#endscore").html(endscore)
             }
-        }) // add , 3000) back 
+            var endresult = parseInt($('#score').html()); 
+            if (endresult > 50){
+                $("#endMessage").html("Congrats!")
+            } else {
+                $("#endMessage").html("Too bad!")
+            }
+        }, 3000)
     })
     
     // move to next question
