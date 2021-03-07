@@ -48,8 +48,6 @@ At the end of the game, all the correct answers will be added and the player wil
 *if the player wants to try to beat the score, click over the logo to start again.*
 
 
-To be able to play the game at <a href="" target="_blank">
-
 ### Design
 ---
 ##### Colors
@@ -102,6 +100,7 @@ To be included in this build are;
 - Heroku
 - Favicon
 - tinyJPG
+- Google maps
 - Trello
 - jQuery
 - Slack

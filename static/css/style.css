@@ -67,25 +67,10 @@ h1 {
     padding: 30px; 
 }
 
-#quiz {
-    
-}
-
 #question-form h5 {
     font-size: 130%;
     color: black;
     margin-bottom: 30px;
-}
-
-    /* display: block; */
-    max-width: 100%;
-    color:#fff;
-    /* margin: 45% 0 50px 60px; */
-    padding: 30px; 
-}
-
-#quiz {
-    
 }
 
 #question-form h5 {
