@@ -369,6 +369,7 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 
 /* End Page  */
 .CongratsText{
+    font-family: 'Roboto', sans-serif;
     margin: auto;
     text-align: center;
     margin-top: 10px;
@@ -376,6 +377,7 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
 }
 
 .CompletedPara{
+    font-family: 'Roboto', sans-serif;
     margin: auto;
     text-align: center;
     margin-top: 10px;
