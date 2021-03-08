@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVLOPMENT' is os.environ
+DEBUG = 'DEVLOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['paddys-quiz.herokuapp.com', 'localhost']
 
