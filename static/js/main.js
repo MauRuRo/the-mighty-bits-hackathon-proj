@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     $("#leprechaun").click(function(){
         let url = window.location.href
-        url = url + "/trivia"
+        url = url + "trivia"
         window.location.href = url
     })
     // add attr checked for clicked answer
