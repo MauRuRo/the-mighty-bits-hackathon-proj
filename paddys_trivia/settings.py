@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 from pathlib import Path
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = "4%e7@vp6o_2t7!ro%wz(lh&49ef6nff=*c2^_731d&9te#53*b"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVLOPMENT' in os.environ
+DEBUG = True
 
-ALLOWED_HOSTS = ['paddys-quiz.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,16 +80,11 @@ WSGI_APPLICATION = 'paddys_trivia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES ={
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    } 
-else:
-    DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': BASE_DIR / 'db.sqlite3',
-   }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 

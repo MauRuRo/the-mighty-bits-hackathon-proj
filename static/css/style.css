@@ -373,7 +373,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .CompletedPara{
@@ -381,7 +380,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
 }
 
 #endscore{
@@ -404,7 +402,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .CompletedPara{
@@ -412,7 +409,6 @@ box-shadow was used to overwrite Bootstrap btn-secondary color */
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 #endscore{
